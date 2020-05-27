@@ -9,6 +9,7 @@
 <form:form action="${pageContext.request.contextPath}/project/admin/save" modelAttribute="aProject" enctype="multipart/form-data"
            method="post">
     <form:hidden path="id" value="${aProject.id}"/>
+    <form:hidden path="detail.id" value="${aProject.detail.id}"/>
 
 <table>
     <tr>
