@@ -59,7 +59,7 @@
             <list>
                 <bean class="edu.wctc.service.converter.StringToLocationConverter"/>
                 <bean class="edu.wctc.service.converter.StringToClassConverter"/>
-                <bean class="edu.wctc.service.converter.StringToSkillListConverter"/>
+                <bean class="edu.wctc.service.converter.StringToSkillConverter"/>
             </list>
         </property>
     </bean>

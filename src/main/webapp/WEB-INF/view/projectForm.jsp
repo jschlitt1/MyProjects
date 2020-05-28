@@ -30,10 +30,10 @@
     <tr>
         <td><label>Class</label></td>
         <td>
-            <form:select path="class" items="${classes}" itemLabel="className" itemValue="id"
+            <form:select path="detail.classes" items="${classes}" itemLabel="className" itemValue="id"
                          cssClass="select-css">
             </form:select>
-            <form:errors path="class" cssClass="error"/>
+            <form:errors path="detail.classes" cssClass="error"/>
         </td>
     </tr>
     <tr>

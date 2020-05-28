@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
+//not used in code, needed skill converter and not directly to a list of skills
 public class StringToSkillListConverter implements Converter<String, List<Skill>> {
     @Autowired
     private SkillService skillService;
