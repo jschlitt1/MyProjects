@@ -5,7 +5,9 @@
 </head>
 <body>
 <%@ include file="include/navbar.jsp" %>
-
+<br>
+<br>
+<br>
 <form:form action="${pageContext.request.contextPath}/class/admin/save" modelAttribute="aClass" enctype="multipart/form-data"
            method="post">
     <form:hidden path="id" value="${aClass.id}"/>
@@ -41,7 +43,7 @@
     </tr>
     <tr>
         <td></td>
-        <td><input type="submit" value="Save" class="save"></td>
+        <td><input type="submit" value="Save" class="btn btn-success"></td>
     </tr>
 </table>
 </form:form>

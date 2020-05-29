@@ -8,25 +8,20 @@
 <%@ include file="include/navbar.jsp" %>
 <h1>List of all the projects</h1>
 
-<!-- search form -->
-<form:form action="search" method="GET">
-Search Projects: <input type="search" name="searchTerm"/>
-<input type="submit" value="Search" class="add-button"/>
-</form:form>
 <security:authorize access="hasRole('ADMIN')">
-<button class="add-button"
+<button class="btn btn-success"
         onclick="window.location.href='${pageContext.request.contextPath}/project/admin/showAddProjectForm'; return false;">Add Project
 </button>
 </security:authorize>
-
-
+<br>
+<br>
 <!-- Project list table -->
 
 <table class="table table-striped">
     <tr>
         <th>Name</th>
         <th>Class</th>
-        <th>Skills(not implamented yet)</th>
+        <th>Skills</th>
         <!-- Only show table header if user is logged in -->
         <security:authorize access="hasAnyRole('ADMIN')">
             <th>Action</th>
@@ -66,11 +61,11 @@ Search Projects: <input type="search" name="searchTerm"/>
             <security:authorize access="hasAnyRole('USER,ADMIN')">
                 <td>
                     <!-- display the update link -->
-                    <a href="${updateLink}">Update</a>
+                    <a href="${updateLink}" class="btn btn-info">Update</a>
                     <!-- only display the delete link if user is admin-->
                     <security:authorize access="hasRole('ADMIN')">
                         |
-                        <a href="${deleteLink}"
+                        <a href="${deleteLink}" class="btn btn-danger"
                            onclick="if (!confirm('Are you sure?')) return false">Delete</a>
                     </security:authorize>
                 </td>

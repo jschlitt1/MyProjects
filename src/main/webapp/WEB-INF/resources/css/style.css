@@ -1,0 +1,36 @@
+.error{
+    text-color: red;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: red;
+}
+.container{
+    background-color: white;
+    height: 100%;
+}
+select[multiple]{
+    height: 250px;
+}
+nav{
+    color: white;
+    margin-bottom: 0px;
+}
+nav.navbar-inverse{
+    margin-bottom:0px;
+}
+.footer{
+    background-color: #36454F;
+    color: white;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+}
+.footer p{
+    text-align : center;
+}

@@ -22,7 +22,7 @@
 </ul>
 <h2>Skill(s):</h2>
 <ul>
-    <c:forEach var="tempSkill" items="${aProject.skills}">
+    <c:forEach var="tempSkill" items="${aProject.detail.skills}">
         <!-- create a link for more info on the skill (removed)-->
         <li>${tempSkill.name}</li>
     </c:forEach>

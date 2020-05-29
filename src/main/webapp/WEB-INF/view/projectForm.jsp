@@ -5,7 +5,9 @@
 </head>
 <body>
 <%@ include file="include/navbar.jsp" %>
-
+<br>
+<br>
+<br>
 <form:form action="${pageContext.request.contextPath}/project/admin/save" modelAttribute="aProject" enctype="multipart/form-data"
            method="post">
     <form:hidden path="id" value="${aProject.id}"/>

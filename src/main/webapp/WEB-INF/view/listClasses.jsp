@@ -8,20 +8,22 @@
 <%@ include file="include/navbar.jsp" %>
 <h1>List of all the Classes</h1>
 
+
 <!-- Only show add donut button if user is logged in -->
 <security:authorize access="hasRole('ADMIN')">
-<button class="add-button"
+<button class="btn btn-success"
         onclick="window.location.href='${pageContext.request.contextPath}/class/admin/showAddClassForm'; return false;">Add Class
 </button>
 </security:authorize>
-
+<br>
+<br>
 
 <!-- Project list table -->
 
 <table class="table table-striped">
     <tr>
         <th>Name</th>
-        <th>Skills(not implamented yet)</th>
+        <th>Skills</th>
         <!-- Only show table header if user is logged in -->
         <security:authorize access="hasAnyRole('ADMIN')">
             <th>Action</th>
@@ -56,11 +58,11 @@
             <security:authorize access="hasAnyRole('USER,ADMIN')">
                 <td>
                     <!-- display the update link -->
-                    <a href="${updateLink}">Update</a>
+                    <a href="${updateLink}" class="btn btn-info">Update</a>
                     <!-- only display the delete link if user is admin-->
                     <security:authorize access="hasRole('ADMIN')">
                         |
-                        <a href="${deleteLink}"
+                        <a href="${deleteLink}" class="btn btn-danger"
                            onclick="if (!confirm('Are you sure?')) return false">Delete</a>
                     </security:authorize>
                 </td>
