@@ -23,7 +23,7 @@
         <th>Class</th>
         <th>Skills</th>
         <!-- Only show table header if user is logged in -->
-        <security:authorize access="hasAnyRole('ADMIN')">
+        <security:authorize access="hasAnyRole('USER,ADMIN')">
             <th>Action</th>
         </security:authorize>
     </tr>
