@@ -15,6 +15,14 @@
 </security:authorize>
 <br>
 <br>
+<!-- search form -->
+<form:form action="project/search" method="GET">
+Search Projects: <input type="search" name="searchTerm"/>
+<input type="submit" value="Search" class="add-button"/>
+</form:form>
+
+<br>
+<br>
 <!-- Project list table -->
 
 <table class="table table-striped">
